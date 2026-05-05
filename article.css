@@ -1,0 +1,58 @@
+/*========== Article Page Specific Styles ==========*/
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
+}
+
+.article {
+  margin-top: 100px;
+  display: flex;
+}
+
+.articleFlex {
+  padding: 20px;
+  padding-left: 40px;
+  width: 70%;
+  background-color: var(--bg-secondary);
+  width: 100%;
+}
+
+.articleContent {
+  font-family: "Google Sans";
+  font-size: 20px;
+}
+
+.articleImage {
+  width: 100%;
+  padding: 15px 0;
+}
+
+.articleRecommendations {
+  display: flex;
+  flex-direction: column;
+}
+
+.featuredFlex {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px;
+  padding-top: 20px;
+  width: 400px;
+}
+
+@media (max-width: 700px) {
+  .article {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .featuredFlex {
+    width: 100%;
+    padding: 50px;
+  }
+}

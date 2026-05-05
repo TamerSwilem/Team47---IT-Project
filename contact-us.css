@@ -1,0 +1,37 @@
+/*========== Contact Us Page Specific Styles ==========*/
+
+.contactUsFlex {
+  display: flex;
+  padding: 40px 100px 0 100px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-wrapper {
+  margin-top: 100px;
+}
+
+.contact-message {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid var(--border-primary);
+  box-shadow: 0 4px 9px var(--shadow-color);
+  transition: 200ms;
+  font-family: Poppins;
+  font-size: 0.9rem;
+  min-height: 150px;
+  resize: vertical;
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+.contact-message:focus {
+  border: 2px solid var(--border-focus);
+  outline: none;
+}
+
+.contact-message::placeholder {
+  font-family: Poppins;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}

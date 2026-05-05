@@ -1,0 +1,121 @@
+/*========== Homepage Specific Styles ==========*/
+
+main {
+  margin-top: 90px;
+}
+
+/* Hero Section */
+.hero {
+  padding: 60px 80px;
+  display: flex;
+  gap: 40px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  align-items: center;
+}
+
+.form-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  min-height: auto;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.hero .form-container {
+  box-shadow: none;
+  padding: 0;
+  width: 100%;
+  background: transparent;
+}
+
+.hero .form-input {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 9px rgba(0, 0, 0, 0.2);
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+.hero .form-input::placeholder {
+  font-family: Poppins;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.heroArticle {
+  display: flex;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow-strong);
+  flex: 3;
+}
+
+.heroArticleImageContainer {
+  width: 65%;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.heroArticleImageContainer img {
+  width: 100%;
+  height: 100%;           
+  object-fit: cover;      
+}
+
+.heroArticleData {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 30px;
+  padding-top: 30px;
+  background: var(--bg-secondary);
+}
+
+.heroArticleHeader {
+  font-family: "Google Sans", serif;   
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.3;
+  color: var(--text-secondary);
+}
+
+.heroArticleHeader:hover{
+  text-decoration: underline;
+}
+
+/* Featured Section */
+.featured {
+  padding: 60px;
+}
+
+.featuredGrid{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
+  gap: 100px 60px;
+}
+
+/* Responsive */
+@media (max-width: 1000px){
+  body{
+    padding-top: 45px;
+  }
+  .heroArticle{
+    flex-direction: column;
+  }
+  .heroArticleImageContainer{
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px){
+  .form-wrapper{
+    display: none;
+  }
+  .hero{
+    padding: 40px 20px;
+  }
+}
+
+
