@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="general.css">
+  <link rel="stylesheet" href="searchresults.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+  <title>Deluxe - Home</title>
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <div class="navBar">
+
+        <div class="navBarLeftSec">
+
+          <button class="filterMenuToggle" onclick="document.getElementById('filterCheckbox').click()">Filter  Menu</button>
+          <input id="filterCheckbox" type="checkbox" onchange="toggleFilterMenu()" style="display: none;">
+          
+          <button class="darkModeToggle" onclick="toggleDarkMode()" aria-label="Toggle dark mode">
+
+          </button>
+          <a href="Homepage.html" style="text-decoration: none;">
+            <h1 class="navBarLogo">
+              TEAM47<br>SPORTS
+            </h1>
+          </a>
+          <input class="navSearch navBarSearch" type="text" placeholder="Search for Articles...">
+        </div>
+
+        <div class="navBarRightSec">
+          <div class="navBarButtons">
+            <a href="contact-us.html">
+                <button class="navBarButton">
+                Contact Us
+                </button>
+            </a>
+
+            <a href="login.html">
+                <button class="navBarButton">
+                Login
+                </button>
+            </a>
+          </div>
+          <p class="navBarRegister">Don't have an account?
+            <a href="register.html" style="color: rgb(54, 189, 252);">Register</a>
+          </p>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    
+    <aside class="filters">
+        <h1>FILTERS</h1>
+
+            <div class="filterGroup">
+                <h3>Scope</h3>
+                <div class="filterLabels">
+                    <label><input type="checkbox" id="scopeGlobal" class="filterInput"> Global</label>
+                    <label><input type="checkbox" id="scopeLocal" class="filterInput"> Local</label>
+                </div>
+            </div>
+
+            <div class="filterGroup">
+                <h3>Sport</h3>
+                <div class="filterLabels">
+                    <label><input type="checkbox" id="sportFootball" class="filterInput"> Football</label>
+                    <label><input type="checkbox" id="sportBoxing" class="filterInput"> Boxing</label>
+                    <label><input type="checkbox" id="sportDarts" class="filterInput"> Darts</label>
+                </div>
+            </div>
+
+            <div class="filterGroup">
+                <h3>Sort By</h3>
+                <div class="filterLabels">
+                    <label><input type="radio" name="sort" id="sortNewest" class="filterInput"> Newest</label>
+                    <label><input type="radio" name="sort" id="sortOldest" class="filterInput"> Oldest</label>
+                    <label><input type="radio" name="sort" id="sortPopular" class="filterInput"> Most Popular</label>
+                </div>
+            </div>
+    </aside>
+
+
+
+
+    <section class="featured">
+      <div class="featuredGrid resultList">
+      </div>
+    </section>
+  </main>
+
+  <footer>
+
+  </footer>
+
+  <script src="scripts/auth.js"></script>
+  <script type="module" src="scripts/general.js"></script>
+  <script type="module" src="scripts/resultpage.js"></script>
+  <script>
+    initAuthNav();
+  </script>
+</body>
+</html>

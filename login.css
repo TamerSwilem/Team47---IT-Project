@@ -1,0 +1,68 @@
+
+
+.heroLogin,
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.heroLoginContainer,
+.form-container{
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 20px var(--text-light);
+  padding: 30px;
+  border-radius: 8px;
+  width: 30rem;
+  background-color: var(--card-bg);
+}
+
+body.dark .heroLoginContainer,
+body.dark .form-container,
+body.dark-mode .heroLoginContainer,
+body.dark-mode .form-container{
+  background-color: var(--card-bg);
+}
+
+.heroLoginInputDiv,
+.form-group{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.heroLoginInput,
+.form-input{
+  width: 100%;
+  padding: 15px;
+  border: 2px solid var(--text-light);
+  box-shadow:  0 4px 9px rgba(0, 0, 0, 0.2);
+}
+
+.heroLoginInput::placeholder,
+.form-input::placeholder{
+  font-family: Poppins;
+  font-size: 0.9rem;
+}
+
+.heroLoginInput:focus,
+.form-input:focus {
+  border: 2px solid var(--text-light);
+  outline: none
+}
+
+.form-submit{
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+}
+
+@media (max-width: 500px) {
+  .heroLoginContainer,
+  .form-container{
+    margin: 20px;
+    width: 100%;
+  }
+}
