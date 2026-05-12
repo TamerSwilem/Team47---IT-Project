@@ -5,9 +5,9 @@
 
 .filterMenuToggle{
   background: var(--card-bg);
-  border: 2px solid var(--text-light);
+  border: 2px solid var(--accent-color);
   border-radius: 50px;
-  color: var(--text-light);
+  color: var(--accent-color);
   font-size: 1rem;
   font-family: Poppins, sans-serif;
   font-weight: 500;

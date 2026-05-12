@@ -10,14 +10,14 @@
   --bg-color: #f7f7f7;
   --card-bg: white;
   --text-color: #333;
-  --text-light: rgb(107, 15, 228);
+  --accent-color: rgb(107, 15, 228);
 }
 
 .dark {
   --bg-color: #1a1a1a;
   --card-bg: #2d2d2d;
   --text-color: #e0e0e0;
-  --text-light: rgb(208, 145, 245);
+  --accent-color: rgb(208, 145, 245);
 }
 
 body {
@@ -29,9 +29,9 @@ body {
 
 .darkModeToggle {
   background: var(--card-bg);
-  border: 2px solid var(--text-light);
+  border: 2px solid var(--accent-color);
   border-radius: 50px;
-  color: var(--text-light);
+  color: var(--accent-color);
   font-size: 1rem;
   font-family: Poppins, sans-serif;
   font-weight: 500;
@@ -40,7 +40,7 @@ body {
 }
 
 .darkModeToggle:hover {
-  background-color: var(--text-light);
+  background-color: var(--accent-color);
   color: var(--bg-color);
   border-radius: 8px;
 }
@@ -61,11 +61,11 @@ body {
 }
 
 .form-message.error {
-  color: var(--text-light);
+  color: var(--accent-color);
 }
 
 .form-message.success {
-  color: var(--text-light);
+  color: var(--accent-color);
 }
 
 /* ------------------------------
@@ -76,7 +76,7 @@ body {
   display: flex;
   align-items: center;
   padding: 10px 20px;
-  background: var(--text-light);
+  background: var(--accent-color);
   position: fixed;
   top: 0;
   left: 0;
@@ -100,7 +100,7 @@ body {
 .navBarSearch{
   width: 100%;
   padding: 15px;
-  border: 2px solid var(--text-light);
+  border: 2px solid var(--accent-color);
   box-shadow:  0 0 5px var(--text-color);
 }
 
@@ -134,7 +134,7 @@ body {
 
 .navBarButton:hover{
   background-color: var(--card-bg);
-  color: var(--text-light);
+  color: var(--accent-color);
   border-radius: 8px;
 }
 

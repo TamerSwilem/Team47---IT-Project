@@ -23,7 +23,7 @@
 .form-container{
   display: flex;
   flex-direction: column;
-  box-shadow: 0 4px 20px var(--text-light);
+  box-shadow: 0 4px 20px var(--accent-color);
   padding: 30px;
   border-radius: 8px;
   width: 30rem;
@@ -48,7 +48,7 @@ body.dark-mode .form-container{
 .form-input{
   width: 100%;
   padding: 15px;
-  border: 2px solid var(--text-light);
+  border: 2px solid var(--accent-color);
   box-shadow:  0 4px 9px rgba(0, 0, 0, 0.2);
 }
 
@@ -60,7 +60,7 @@ body.dark-mode .form-container{
 
 .heroLoginInput:focus,
 .form-input:focus {
-  border: 2px solid var(--text-light);
+  border: 2px solid var(--accent-color);
   outline: none;
 }
 
@@ -68,7 +68,7 @@ body.dark-mode .form-container{
 .contact-message{
   width: 100%;
   padding: 15px;
-  border: 2px solid var(--text-light);
+  border: 2px solid var(--accent-color);
   box-shadow: 0 4px 9px rgba(0, 0, 0, 0.2);
   font-family: Poppins;
   font-size: 0.9rem;
@@ -78,7 +78,7 @@ body.dark-mode .form-container{
 
 .contactMessage:focus,
 .contact-message:focus {
-  border: 2px solid var(--text-light);
+  border: 2px solid var(--accent-color);
   outline: none;
 }
 

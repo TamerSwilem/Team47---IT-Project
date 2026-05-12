@@ -14,7 +14,7 @@ main{
   padding: 60px 80px;
   display: flex;
   gap: 40px;
-  border-bottom: 1px solid var(--text-light);
+  border-bottom: 1px solid var(--accent-color);
 }
 
 .heroLogin{
@@ -25,7 +25,7 @@ main{
 .form-input{
   width: 100%;
   padding: 15px;
-  border: 2px solid var(--text-light);
+  border: 2px solid var(--accent-color);
   box-shadow:  0 4px 9px rgba(0, 0, 0, 0.2);
 }
 
@@ -47,11 +47,11 @@ main{
 }
 
 .form-message.error{
-  color: var(--text-light);
+  color: var(--accent-color);
 }
 
 .form-message.success{
-  color: var(--text-light);
+  color: var(--accent-color);
 }
 
 .heroArticle,
